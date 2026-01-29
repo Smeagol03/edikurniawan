@@ -93,6 +93,21 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch((error) => console.error("Gagal memutar musik:", error));
     }
 
+    // Sembunyikan section buka-undangan dengan fade out
+    const bukaUndangan = document.getElementById("buka-undangan");
+    if (bukaUndangan) {
+      bukaUndangan.style.transition = "opacity 0.5s ease-out";
+      bukaUndangan.style.opacity = "0";
+      
+      setTimeout(() => {
+        bukaUndangan.style.display = "none";
+        // Refresh AOS setelah section disembunyikan
+        if (typeof AOS !== 'undefined') {
+          AOS.refresh();
+        }
+      }, 500);
+    }
+
     if (heroSection) {
       heroSection.scrollIntoView({ behavior: "smooth" });
     }
