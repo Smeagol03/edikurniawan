@@ -1,0 +1,113 @@
+:root {
+  --pink: #f14e95;
+  --pink-muted: #fdf4f8;
+  --pink-hover: #d84686;
+  --white: #fff;
+  --grey: #ccc;
+  --light-grey: #d4d4d4;
+  --very-light-grey: #eee;
+  --dark-grey: #999;
+  --dark: #151515;
+  --black: #000;
+}
+
+* {
+  scroll-behavior: smooth;
+  font-family: poppins, sans-serif;
+}
+
+/* Example styling for h1 */
+h1,
+h2 {
+  /* font-family: "Sacramento", cursive; */
+  font-family: "Great Vibes", cursive;
+}
+
+.font-script {
+  font-family: "Great Vibes", "Dancing Script", cursive;
+}
+
+/* @keyframes blob {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+
+    33% {
+        transform: translate(30px, -50px) scale(1.1);
+    }
+
+    66% {
+        transform: translate(-20px, 20px) scale(0.9);
+    }
+
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+
+.animate-blob {
+    animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+    animation-delay: 2s;
+} */
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 50s linear infinite;
+}
+
+/* Shimmer animation for premium card effects */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) skewX(-12deg);
+  }
+  100% {
+    transform: translateX(200%) skewX(-12deg);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
+/* Shimmer blink effect */
+@keyframes shimmer-blink {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.animate-shimmer-blink {
+  animation: shimmer-blink 3s ease-in-out infinite;
+}
+
+/* Custom Animation for Dynamic Elements */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
