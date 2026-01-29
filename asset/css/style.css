@@ -11,20 +11,32 @@
   --black: #000;
 }
 
+/* Ensure fonts display properly with swap */
 * {
   scroll-behavior: smooth;
-  font-family: poppins, sans-serif;
+  font-family:
+    "Poppins",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
 }
 
 /* Example styling for h1 */
 h1,
 h2 {
   /* font-family: "Sacramento", cursive; */
-  font-family: "Great Vibes", cursive;
+  font-family: "Great Vibes", "Brush Script MT", "Segoe Script", cursive;
+  font-display: swap;
 }
 
 .font-script {
-  font-family: "Great Vibes", "Dancing Script", cursive;
+  font-family:
+    "Great Vibes", "Dancing Script", "Brush Script MT", "Segoe Script", cursive;
+  font-display: swap;
 }
 
 /* @keyframes blob {

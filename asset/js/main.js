@@ -1,6 +1,17 @@
-// AOS
-AOS.init({
-  once: true,
+// AOS - Initialize after scripts loaded (defer)
+document.addEventListener("DOMContentLoaded", function() {
+  // Wait for AOS to be available (loaded with defer)
+  const initAOS = () => {
+    if (typeof AOS !== 'undefined') {
+      AOS.init({
+        once: true,
+      });
+    } else {
+      // Retry if AOS not loaded yet
+      setTimeout(initAOS, 100);
+    }
+  };
+  initAOS();
 });
 
 
