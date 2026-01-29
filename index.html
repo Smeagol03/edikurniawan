@@ -42,52 +42,46 @@
     <link rel="stylesheet" href="./asset/css/style.css">
 </head>
 
-<body class="overflow-hidden">
+<body class="overvlow-hidden">
     <!-- musik -->
     <audio id="wedding-music" src="./asset/musik/lagu.mp3" loop></audio>
     <!-- buka undangan -->
-    <section id="buka-undangan" class="fixed inset-0 z-9999">
-        <div class="relative w-full h-dvh flex justify-center items-center bg-cover bg-no-repeat bg-center bg-gray-600 bg-blend-multiply overflow-hidden"
+    <section id="buka-undangan">
+        <div class="relative w-full h-screen flex justify-center items-center bg-cover bg-no-repeat bg-center bg-gray-500 bg-blend-multiply transition-all duration-700"
             style="background-image: url('./asset/img/bg.jpg');">
 
             <!-- Decorative background elements -->
             <img src="./asset/img/dekoratif/pngwing.com (21)2.png"
-                class="absolute -top-10 left-0 w-full opacity-30 z-0 pointer-events-none max-h-[40vh] object-contain">
+                class="absolute top-0 w-full opacity-30 z-0 pointer-events-none overflow-hidden max-h-[30vh] object-cover">
             <img src="./asset/img/dekoratif/pngwing.com (21).png"
-                class="absolute -bottom-10 left-0 w-full opacity-30 z-0 pointer-events-none max-h-[40vh] object-contain">
+                class="absolute bottom-0 w-full opacity-30 z-0 pointer-events-none overflow-hidden max-h-[30vh] object-cover">
 
             <!-- Konten utama -->
-            <div class="relative z-10 flex flex-col items-center px-4 w-full">
-                <div data-aos="fade-down" class="mb-2">
-                    <span class="text-white text-xs sm:text-sm md:text-base tracking-[0.4em] uppercase font-light">The Wedding of</span>
-                </div>
-                
-                <h1 class="text-white text-5xl sm:text-6xl md:text-7xl py-6 leading-tight drop-shadow-lg" style="font-family: Sacramento;" data-aos="fade-down" data-aos-delay="200">
-                    Awan & Novi
+            <div class="relative z-10 flex flex-col items-center px-4 text-center">
+                <span class="text-white text-sm md:text-base tracking-[0.2em] uppercase mb-2">The Wedding of</span>
+                <h1 class="text-white text-4xl sm:text-5xl md:text-6xl py-4 leading-tight" style="font-family: Sacramento;">
+                    Edikurniawan & Noviana
                 </h1>
 
                 <!-- Profile Image Container -->
-                <div class="relative w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] md:w-[350px] md:h-[350px] flex items-center justify-center my-8" data-aos="zoom-in" data-aos-delay="400">
+                <div class="relative w-[220px] h-[220px] sm:w-[280px] sm:h-[280px] md:w-[320px] md:h-[320px] flex items-center justify-center my-6">
                     <!-- Rotating Decorative Frame -->
                     <img src="./asset/img/dekoratif/pngwing.com (25).png" alt="dekoratif"
-                        class="absolute w-full h-full animate-spin-slow z-0 opacity-90 object-contain">
+                        class="absolute w-full h-full animate-spin-slow z-0 opacity-80">
 
                     <!-- Main Profile Photo -->
                     <img src="./asset/img/3.jpg" alt="open"
-                        class="w-[160px] h-[160px] sm:w-[200px] sm:h-[200px] md:w-[240px] md:h-[240px] object-cover rounded-full z-10 shadow-2xl ring-8 ring-white/10">
+                        class="w-[180px] h-[180px] sm:w-[230px] sm:h-[230px] md:w-[260px] md:h-[260px] object-cover rounded-full z-10 shadow-2xl ring-4 ring-white/20">
                 </div>
 
-                <div class="flex flex-col items-center gap-2 mb-10" data-aos="fade-up" data-aos-delay="600">
-                    <span class="text-white/90 text-sm sm:text-base font-light tracking-[0.2em] uppercase">
-                        Minggu, 1 Februari 2026
-                    </span>
-                    <div class="h-px w-12 bg-white/30"></div>
-                </div>
+                <span class="text-white text-sm sm:text-base mb-8 font-light tracking-wide">
+                    – Februari 1, 2026, Ijobalit –
+                </span>
 
-                <div data-aos="fade-up" data-aos-delay="800">
+                <div>
                     <a id="play-and-navigate" href="#hero"
-                        class="group relative inline-flex items-center justify-center px-10 py-4 font-bold text-white transition-all duration-300 bg-pink-600 rounded-full hover:bg-pink-700 shadow-xl hover:shadow-pink-500/50 active:scale-95">
-                        <i class="fa-solid fa-envelope-open-text mr-3 group-hover:rotate-12 transition-transform"></i>
+                        class="group relative inline-flex items-center justify-center px-8 py-3 font-semibold text-white transition-all duration-300 bg-pink-600 rounded-full hover:bg-pink-700 hover:shadow-[0_0_20px_rgba(219,39,119,0.5)] active:scale-95">
+                        <i class="fa-solid fa-envelope-open-text mr-2 group-hover:scale-110 transition-transform"></i>
                         Buka Undangan
                     </a>
                 </div>
